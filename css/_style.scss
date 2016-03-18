@@ -211,7 +211,8 @@ header {
 ===============================================================*/
 
 .container-fluid > .row:nth-child(5) {
-  padding: 2em 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   h1 {
     margin-bottom: 1em;
   }
