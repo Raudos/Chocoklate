@@ -88,6 +88,22 @@
       padding-left: 2.5em;
       padding-right: 2.5em; } }
 
+.light {
+  color: #88cfdc;
+  font-size: 1em; }
+
+.mid {
+  color: #44afc2;
+  font-size: 1em; }
+
+.dark {
+  color: #37829c;
+  font-size: 1.3em; }
+
+.grey {
+  color: grey;
+  font-size: 0.8em; }
+
 /* ===============================================================
                           First row
 ===============================================================*/
@@ -130,6 +146,9 @@ header {
     header nav p {
       color: white;
       display: inline-block; }
+      header nav p:hover {
+        color: #88cfdc;
+        cursor: pointer; }
 
 /* ===============================================================
                           Second row
@@ -205,10 +224,16 @@ header {
   .container-fluid > .row:nth-child(3) #random {
     padding: 15px;
     box-sizing: border-box; }
+    .container-fluid > .row:nth-child(3) #random p {
+      display: inline-block;
+      margin: 5px; }
+      .container-fluid > .row:nth-child(3) #random p:hover {
+        cursor: pointer; }
   .container-fluid > .row:nth-child(3) .row:nth-child(1) h1 {
     color: black; }
   .container-fluid > .row:nth-child(3) .row:nth-child(1) h2 {
-    color: #37829c; }
+    color: #37829c;
+    font-size: 1.3em; }
   .container-fluid > .row:nth-child(3) .row:nth-child(2) .table {
     margin: 1em 0px; }
     .container-fluid > .row:nth-child(3) .row:nth-child(2) .table .cell:first-child {
