@@ -1,6 +1,10 @@
 .container-fluid > .row {
-  padding-left: 5em;
-  padding-right: 5em;
+  @for $i from 0 through 5 {
+    @media (max-width: 1500px - 200px * $i) {
+      padding-left: 5.5em - 0.6em * $i;
+      padding-right: 5.5em - 0.6em * $i;
+    }
+  }
   box-sizing: border-box;
 }
 
@@ -18,7 +22,7 @@ header {
   background-size: 33%;
   position: relative;
   img {
-    padding: 1.5em;
+    padding: 1.5em 0px;
     width: 20%;
     @media (max-width: 768px) {
       padding: 0.8em;
@@ -28,7 +32,11 @@ header {
     display: inline-block;
     position: absolute;
     top: 50%;
-    right: 5em;
+    @for $i from 0 through 5 {
+      @media (max-width: 1500px - 200px * $i) {
+        right: 5em - 0.6em * $i;
+      }
+    }
     transform: translateY(-50%);
     p {
       color: white;
@@ -46,8 +54,6 @@ header {
   background-image: url("images/bg.png");
   overflow: hidden;
   position: relative;
-  padding-top: 2em;
-  padding-bottom: 2em;
   img {
     position: absolute;
     width: 55%;
@@ -56,6 +62,14 @@ header {
     transform: translateY(-50%);
   }
   div {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    @for $i from 0 through 5 {
+      @media (max-width: 1500px - 200px * $i) {
+        padding-top: 2em - 0.3em * $i;
+        padding-bottom: 2em - 0.3em * $i;
+      }
+    }
     h1, p {
       color: white;
     }
@@ -63,7 +77,11 @@ header {
       padding-bottom: 0.8em;
     }
     p {
-      line-height: 35px;
+      @for $i from 0 through 5 {
+        @media (max-width: 1500px - 200px * $i) {
+          line-height: 35px - 4px * $i;
+        }
+      }
     }
   }
 }
@@ -75,6 +93,11 @@ header {
 .container-fluid > .row:nth-child(3) {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+  text-align: justify;
+  #random {
+    padding: 15px;
+    box-sizing: border-box;
+  }
   .row {
     &:nth-child(1) {
       h1 {
@@ -97,6 +120,11 @@ header {
       p {
         line-height: 27px;
         color: grey;
+        @for $i from 0 through 5 {
+          @media (max-width: 1500px - 200px * $i) {
+            line-height: 27px - 3px * $i;
+          }
+        }
       }
     }
   }
@@ -119,7 +147,11 @@ header {
   #gallery {
     div {
       overflow: hidden;
-      height: 250px;
+      @for $i from 0 through 7 {
+        @media (max-width: 1500px - 150px * $i) {
+          height: 240px - 30px * $i;
+        }
+      }
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover;
@@ -165,7 +197,11 @@ header {
 ===============================================================*/
 
 .container-fluid > .row:nth-child(6) {
-  height: 350px;
+  @for $i from 0 through 7 {
+    @media (max-width: 1500px - 150px * $i) {
+      height: 350px - 30px * $i;
+    }
+  }
   background-image: url("images/bg6.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,7 +280,8 @@ header {
 .container-fluid > footer {
   padding-top: 2em;
   padding-bottom: 2em;
-  .row {
+  table{
+    width: 100%;
     border-bottom: 1px solid grey;
     h1 {
       padding: 0.5em;

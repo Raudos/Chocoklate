@@ -1,45 +1,92 @@
 @media (max-width: 1500px) {
-  nav p {
-    font-size: 1.2em; } }
+  p {
+    font-size: 1em; } }
 @media (max-width: 1300px) {
-  nav p {
-    font-size: 1.06em; } }
+  p {
+    font-size: 0.86em; } }
 @media (max-width: 1100px) {
-  nav p {
-    font-size: 0.92em; } }
+  p {
+    font-size: 0.72em; } }
 @media (max-width: 900px) {
-  nav p {
-    font-size: 0.78em; } }
+  p {
+    font-size: 0.58em; } }
 @media (max-width: 700px) {
-  nav p {
-    font-size: 0.64em; } }
+  p {
+    font-size: 0.44em; } }
 @media (max-width: 500px) {
-  nav p {
-    font-size: 0.5em; } }
+  p {
+    font-size: 0.3em; } }
 
 @media (max-width: 1500px) {
   h1 {
     font-size: 2em; } }
 @media (max-width: 1300px) {
   h1 {
-    font-size: 1.8em; } }
+    font-size: 1.75em; } }
 @media (max-width: 1100px) {
   h1 {
-    font-size: 1.6em; } }
+    font-size: 1.5em; } }
 @media (max-width: 900px) {
   h1 {
-    font-size: 1.4em; } }
+    font-size: 1.25em; } }
 @media (max-width: 700px) {
   h1 {
-    font-size: 1.2em; } }
+    font-size: 1em; } }
 @media (max-width: 500px) {
   h1 {
-    font-size: 1em; } }
+    font-size: 0.75em; } }
+
+@media (max-width: 1500px) {
+  nav p {
+    font-size: 1.2em; } }
+@media (max-width: 1350px) {
+  nav p {
+    font-size: 1.082em; } }
+@media (max-width: 1200px) {
+  nav p {
+    font-size: 0.964em; } }
+@media (max-width: 1050px) {
+  nav p {
+    font-size: 0.846em; } }
+@media (max-width: 900px) {
+  nav p {
+    font-size: 0.728em; } }
+@media (max-width: 750px) {
+  nav p {
+    font-size: 0.61em; } }
+@media (max-width: 600px) {
+  nav p {
+    font-size: 0.492em; } }
+@media (max-width: 450px) {
+  nav p {
+    font-size: 0.374em; } }
 
 .container-fluid > .row {
-  padding-left: 5em;
-  padding-right: 5em;
   box-sizing: border-box; }
+  @media (max-width: 1500px) {
+    .container-fluid > .row {
+      padding-left: 5.5em;
+      padding-right: 5.5em; } }
+  @media (max-width: 1300px) {
+    .container-fluid > .row {
+      padding-left: 4.9em;
+      padding-right: 4.9em; } }
+  @media (max-width: 1100px) {
+    .container-fluid > .row {
+      padding-left: 4.3em;
+      padding-right: 4.3em; } }
+  @media (max-width: 900px) {
+    .container-fluid > .row {
+      padding-left: 3.7em;
+      padding-right: 3.7em; } }
+  @media (max-width: 700px) {
+    .container-fluid > .row {
+      padding-left: 3.1em;
+      padding-right: 3.1em; } }
+  @media (max-width: 500px) {
+    .container-fluid > .row {
+      padding-left: 2.5em;
+      padding-right: 2.5em; } }
 
 /* ===============================================================
                           First row
@@ -52,7 +99,7 @@ header {
   background-size: 33%;
   position: relative; }
   header img {
-    padding: 1.5em;
+    padding: 1.5em 0px;
     width: 20%; }
     @media (max-width: 768px) {
       header img {
@@ -61,8 +108,25 @@ header {
     display: inline-block;
     position: absolute;
     top: 50%;
-    right: 5em;
     transform: translateY(-50%); }
+    @media (max-width: 1500px) {
+      header nav {
+        right: 5em; } }
+    @media (max-width: 1300px) {
+      header nav {
+        right: 4.4em; } }
+    @media (max-width: 1100px) {
+      header nav {
+        right: 3.8em; } }
+    @media (max-width: 900px) {
+      header nav {
+        right: 3.2em; } }
+    @media (max-width: 700px) {
+      header nav {
+        right: 2.6em; } }
+    @media (max-width: 500px) {
+      header nav {
+        right: 2em; } }
     header nav p {
       color: white;
       display: inline-block; }
@@ -74,28 +138,73 @@ header {
   background-color: #37829c;
   background-image: url("images/bg.png");
   overflow: hidden;
-  position: relative;
-  padding-top: 2em;
-  padding-bottom: 2em; }
+  position: relative; }
   .container-fluid > .row:nth-child(2) img {
     position: absolute;
     width: 55%;
     top: 50%;
     right: 0%;
     transform: translateY(-50%); }
-  .container-fluid > .row:nth-child(2) div h1, .container-fluid > .row:nth-child(2) div p {
-    color: white; }
-  .container-fluid > .row:nth-child(2) div h1 {
-    padding-bottom: 0.8em; }
-  .container-fluid > .row:nth-child(2) div p {
-    line-height: 35px; }
+  .container-fluid > .row:nth-child(2) div {
+    padding-top: 2em;
+    padding-bottom: 2em; }
+    @media (max-width: 1500px) {
+      .container-fluid > .row:nth-child(2) div {
+        padding-top: 2em;
+        padding-bottom: 2em; } }
+    @media (max-width: 1300px) {
+      .container-fluid > .row:nth-child(2) div {
+        padding-top: 1.7em;
+        padding-bottom: 1.7em; } }
+    @media (max-width: 1100px) {
+      .container-fluid > .row:nth-child(2) div {
+        padding-top: 1.4em;
+        padding-bottom: 1.4em; } }
+    @media (max-width: 900px) {
+      .container-fluid > .row:nth-child(2) div {
+        padding-top: 1.1em;
+        padding-bottom: 1.1em; } }
+    @media (max-width: 700px) {
+      .container-fluid > .row:nth-child(2) div {
+        padding-top: 0.8em;
+        padding-bottom: 0.8em; } }
+    @media (max-width: 500px) {
+      .container-fluid > .row:nth-child(2) div {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em; } }
+    .container-fluid > .row:nth-child(2) div h1, .container-fluid > .row:nth-child(2) div p {
+      color: white; }
+    .container-fluid > .row:nth-child(2) div h1 {
+      padding-bottom: 0.8em; }
+    @media (max-width: 1500px) {
+      .container-fluid > .row:nth-child(2) div p {
+        line-height: 35px; } }
+    @media (max-width: 1300px) {
+      .container-fluid > .row:nth-child(2) div p {
+        line-height: 31px; } }
+    @media (max-width: 1100px) {
+      .container-fluid > .row:nth-child(2) div p {
+        line-height: 27px; } }
+    @media (max-width: 900px) {
+      .container-fluid > .row:nth-child(2) div p {
+        line-height: 23px; } }
+    @media (max-width: 700px) {
+      .container-fluid > .row:nth-child(2) div p {
+        line-height: 19px; } }
+    @media (max-width: 500px) {
+      .container-fluid > .row:nth-child(2) div p {
+        line-height: 15px; } }
 
 /* ===============================================================
                           Third row
 ===============================================================*/
 .container-fluid > .row:nth-child(3) {
   padding-top: 1.5em;
-  padding-bottom: 1.5em; }
+  padding-bottom: 1.5em;
+  text-align: justify; }
+  .container-fluid > .row:nth-child(3) #random {
+    padding: 15px;
+    box-sizing: border-box; }
   .container-fluid > .row:nth-child(3) .row:nth-child(1) h1 {
     color: black; }
   .container-fluid > .row:nth-child(3) .row:nth-child(1) h2 {
@@ -109,6 +218,24 @@ header {
   .container-fluid > .row:nth-child(3) .row:nth-child(2) p {
     line-height: 27px;
     color: grey; }
+    @media (max-width: 1500px) {
+      .container-fluid > .row:nth-child(3) .row:nth-child(2) p {
+        line-height: 27px; } }
+    @media (max-width: 1300px) {
+      .container-fluid > .row:nth-child(3) .row:nth-child(2) p {
+        line-height: 24px; } }
+    @media (max-width: 1100px) {
+      .container-fluid > .row:nth-child(3) .row:nth-child(2) p {
+        line-height: 21px; } }
+    @media (max-width: 900px) {
+      .container-fluid > .row:nth-child(3) .row:nth-child(2) p {
+        line-height: 18px; } }
+    @media (max-width: 700px) {
+      .container-fluid > .row:nth-child(3) .row:nth-child(2) p {
+        line-height: 15px; } }
+    @media (max-width: 500px) {
+      .container-fluid > .row:nth-child(3) .row:nth-child(2) p {
+        line-height: 12px; } }
 
 /* ===============================================================
                           Fourth row
@@ -123,11 +250,34 @@ header {
     margin-bottom: 1em; }
   .container-fluid > .row:nth-child(4) #gallery div {
     overflow: hidden;
-    height: 250px;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     margin-bottom: 1em; }
+    @media (max-width: 1500px) {
+      .container-fluid > .row:nth-child(4) #gallery div {
+        height: 240px; } }
+    @media (max-width: 1350px) {
+      .container-fluid > .row:nth-child(4) #gallery div {
+        height: 210px; } }
+    @media (max-width: 1200px) {
+      .container-fluid > .row:nth-child(4) #gallery div {
+        height: 180px; } }
+    @media (max-width: 1050px) {
+      .container-fluid > .row:nth-child(4) #gallery div {
+        height: 150px; } }
+    @media (max-width: 900px) {
+      .container-fluid > .row:nth-child(4) #gallery div {
+        height: 120px; } }
+    @media (max-width: 750px) {
+      .container-fluid > .row:nth-child(4) #gallery div {
+        height: 90px; } }
+    @media (max-width: 600px) {
+      .container-fluid > .row:nth-child(4) #gallery div {
+        height: 60px; } }
+    @media (max-width: 450px) {
+      .container-fluid > .row:nth-child(4) #gallery div {
+        height: 30px; } }
     .container-fluid > .row:nth-child(4) #gallery div:nth-child(1) {
       background-image: url("images/layer18.png"); }
     .container-fluid > .row:nth-child(4) #gallery div:nth-child(2) {
@@ -155,10 +305,33 @@ header {
                           Sixth row
 ===============================================================*/
 .container-fluid > .row:nth-child(6) {
-  height: 350px;
   background-image: url("images/bg6.png");
   background-size: cover;
   background-repeat: no-repeat; }
+  @media (max-width: 1500px) {
+    .container-fluid > .row:nth-child(6) {
+      height: 350px; } }
+  @media (max-width: 1350px) {
+    .container-fluid > .row:nth-child(6) {
+      height: 320px; } }
+  @media (max-width: 1200px) {
+    .container-fluid > .row:nth-child(6) {
+      height: 290px; } }
+  @media (max-width: 1050px) {
+    .container-fluid > .row:nth-child(6) {
+      height: 260px; } }
+  @media (max-width: 900px) {
+    .container-fluid > .row:nth-child(6) {
+      height: 230px; } }
+  @media (max-width: 750px) {
+    .container-fluid > .row:nth-child(6) {
+      height: 200px; } }
+  @media (max-width: 600px) {
+    .container-fluid > .row:nth-child(6) {
+      height: 170px; } }
+  @media (max-width: 450px) {
+    .container-fluid > .row:nth-child(6) {
+      height: 140px; } }
 
 /* ===============================================================
                           Seventh row
@@ -212,12 +385,13 @@ header {
 .container-fluid > footer {
   padding-top: 2em;
   padding-bottom: 2em; }
-  .container-fluid > footer .row {
+  .container-fluid > footer table {
+    width: 100%;
     border-bottom: 1px solid grey; }
-    .container-fluid > footer .row h1 {
+    .container-fluid > footer table h1 {
       padding: 0.5em;
       color: grey; }
-      .container-fluid > footer .row h1 span {
+      .container-fluid > footer table h1 span {
         opacity: 0.6; }
   .container-fluid > footer .centerMe {
     text-align: center;
